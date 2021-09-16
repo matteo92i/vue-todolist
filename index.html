@@ -10,11 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
-    <h1> Lista della spesa</h1>
-    <div id="app">
+    <h1 class="centro"> Lista della spesa</h1>
+    <div id="app" class="centro">
         <ul>
             <li v-for="(element, index) in listaSpesa" >
-                {{element}}
+                {{element}} {{index}}
+                <i class="fas fa-times-circle" @click= "eliminaCibo"></i>
             </li>
         </ul>
 
