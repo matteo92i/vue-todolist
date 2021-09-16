@@ -11,12 +11,13 @@ let app = new Vue({
     methods: {
         eliminaCibo: function(index) {
             this.listaSpesa.splice(index, 1);
-          }
+          },
+          aggiungiCibo: function(element){
+            this.listaSpesa.push(element)
+        }
     },
-    // methods: {
-    //     aggiungiCibo: function(element){
-    //         this.listaSpesa.push(element)
-    //     }
-    // }
+    
+        
+    
 
   })
