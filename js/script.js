@@ -7,5 +7,11 @@ let app = new Vue({
     el: '#app',
     data: {
       listaSpesa: ["pollo", "riso basmati", "fiocchi di latte", "pane integrale", "fesa", "yogurt greco", "frutta secca"]
+    },
+    methods: {
+        eliminaCibo: function(index) {
+            this.listaSpesa.splice(index, 1);
+          }
     }
+
   })

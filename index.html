@@ -15,7 +15,7 @@
         <ul>
             <li v-for="(element, index) in listaSpesa" >
                 {{element}} {{index}}
-                <i class="fas fa-times-circle" @click= "eliminaCibo"></i>
+                <i class="fas fa-times-circle" @click= "eliminaCibo(index)"></i>
             </li>
         </ul>
 
